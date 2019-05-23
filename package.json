@@ -1,0 +1,48 @@
+{
+  "name": "@podium/fastify-layout",
+  "version": "1.0.0",
+  "description": "Fastify plugin for Podium Layout.",
+  "main": "lib/layout-plugin.js",
+  "license": "MIT",
+  "keywords": [
+    "micro services",
+    "micro frontend",
+    "components",
+    "podium",
+    "fastify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:podium-lib/fastify-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/podium-lib/issues"
+  },
+  "homepage": "https://podium-lib.io/",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Trygve Lie",
+  "dependencies": {
+    "@podium/utils": "4.0.0-next.4",
+    "fastify-plugin": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1",
+    "tap": "^14.1.7",
+    "@podium/layout": "4.0.0-next.4",
+    "fastify": "^2.4.1",
+    "hapi": "^18.1.0"
+  }
+}
