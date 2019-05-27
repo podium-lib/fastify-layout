@@ -34,15 +34,14 @@
     "fastify-plugin": "^1.5.0"
   },
   "devDependencies": {
+    "@podium/layout": "4.0.0-next.4",
     "eslint": "^5.15.3",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.1",
-    "tap": "^14.1.7",
-    "@podium/layout": "4.0.0-next.4",
     "fastify": "^2.4.1",
-    "hapi": "^18.1.0"
+    "prettier": "^1.16.1",
+    "tap": "^14.1.7"
   }
 }
