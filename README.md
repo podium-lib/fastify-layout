@@ -1,6 +1,6 @@
 # @podium/fastify-layout
 
-Hapi plugin for @podium/layout.
+Fastify plugin for @podium/layout.
 
 [![Dependencies](https://img.shields.io/david/podium-lib/fastify-layout.svg?style=flat-square)](https://david-dm.org/podium-lib/fastify-layout)
 [![Build Status](https://travis-ci.org/podium-lib/fastify-layout.svg?branch=master&style=flat-square)](https://travis-ci.org/podium-lib/fastify-layout)

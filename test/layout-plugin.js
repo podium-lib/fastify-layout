@@ -1,20 +1,12 @@
 'use strict';
 
 const tap = require('tap');
-const Plugin = require('../');
+const plugin = require('../');
 
-/**
- * Constructor
- */
+tap.test('fastify name - should be podium-layout', t => {
+    const functionName = 'podium-layout';
 
-tap.test(
-    'Constructor() - object type - should be PodiumLayoutHapiPlugin',
-    t => {
-        const p = new Plugin();
-        t.equal(
-            Object.prototype.toString.call(p),
-            '[object PodiumLayoutHapiPlugin]',
-        );
-        t.end();
-    },
-);
+    t.is(plugin[Symbol.for('plugin-meta')].name, functionName);
+    t.is(plugin[Symbol.for('fastify.display-name')], functionName);
+    t.end();
+});
