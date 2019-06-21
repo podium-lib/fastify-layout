@@ -45,12 +45,10 @@ const podlet = layout.client.register({
 
 app.register(FastifyLayout, layout);
 
-app.get('/', async (request, reply) => {
+app.get(layout.pathname(), async (request, reply) => {
     const incoming = reply.app.podium;
-    const result = await Promise.all([
-        podlet.fetch(incoming),
-    ]);
-    reply.podiumSend(result[0].content);
+    const result = await podlet.fetch(incoming);
+    reply.podiumSend(result.content);
 });
 
 const start = async () => {
@@ -77,10 +75,9 @@ app.register(FastifyLayout, layout);
 
 ## Request params
 
-On each request [@podium/layout] will run a set of operations, such as the
-[@podium/context] parsers, on the request. When doing so [@podium/layout] will
-write parameters to `reply.app.podium` which is accessible inside a request
-handelers.
+On each request [@podium/layout] will run a set of operations on the request and
+create an [incoming] object. The [incoming] object is stored at
+`reply.app.podium` which is accessible inside request handlers.
 
 ```js
 app.get('/', async (request, reply) => {
@@ -94,6 +91,13 @@ setting an object at `reply.app.params`.
 
 Example: To pass a value to the [@podium/context locale parser] it should be set
 on `reply.app.params` by a extension executed previously of this extension.
+
+## reply.podiumSend(fragment)
+
+This method will wrap the given fragment in a default [document template] before
+dispatching.
+
+See [document template] for further information.
 
 ## License
 
@@ -119,6 +123,7 @@ SOFTWARE.
 
 [@podium/context locale parser]: https://github.com/podium-lib/context#locale-1 '@podium/context locale parser'
 [Podium documentation]: https://podium-lib.io/ 'Podium documentation'
+[document template]: https://podium-lib.io/docs/api/document 'document template'
 [@podium/context]: https://github.com/podium-lib/context '@podium/context'
 [@podium/layout]: https://github.com/podium-lib/layout '@podium/layout'
 [fastify]: https://www.fastify.io/ 'Fastify'
