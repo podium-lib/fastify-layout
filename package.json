@@ -30,11 +30,11 @@
   },
   "author": "Trygve Lie",
   "dependencies": {
-    "@podium/utils": "4.1.1",
+    "@podium/utils": "4.1.2",
     "fastify-plugin": "^1.5.0"
   },
   "devDependencies": {
-    "@podium/layout": "4.2.4",
+    "@podium/layout": "4.2.5",
     "@podium/test-utils": "^2.0.0",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
