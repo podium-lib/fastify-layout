@@ -11,15 +11,11 @@ class Server {
     constructor(options = {}, podletAddr) {
         this.app = fastify();
 
-        const layout = new Layout(
-            Object.assign(
-                {
-                    pathname: '/',
-                    name: 'layout',
-                },
-                options,
-            ),
-        );
+        const layout = new Layout({
+            pathname: '/',
+            name: 'layout',
+            ...options,
+        });
 
         layout.view((incoming, fragment) => {
             return `## ${fragment} ##`;
