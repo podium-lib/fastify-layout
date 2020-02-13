@@ -2,10 +2,9 @@
 
 Fastify plugin for @podium/layout.
 
-[![Dependencies](https://img.shields.io/david/podium-lib/fastify-layout.svg?style=flat-square)](https://david-dm.org/podium-lib/fastify-layout)
-[![Build Status](https://travis-ci.org/podium-lib/fastify-layout.svg?branch=master&style=flat-square)](https://travis-ci.org/podium-lib/fastify-layout)
-[![Greenkeeper badge](https://badges.greenkeeper.io/podium-lib/fastify-layout.svg?style=flat-square)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/podium-lib/fastify-layout/badge.svg?style=flat-square)](https://snyk.io/test/github/podium-lib/fastify-layout)
+[![Dependencies](https://img.shields.io/david/podium-lib/fastify-layout.svg)](https://david-dm.org/podium-lib/fastify-layout)
+[![GitHub Actions status](https://github.com/podium-lib/fastify-layout/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/podium-lib/fastify-layout/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
+[![Known Vulnerabilities](https://snyk.io/test/github/podium-lib/fastify-layout/badge.svg)](https://snyk.io/test/github/podium-lib/fastify-layout)
 
 Module for building [@podium/layout] servers with [fastify]. For writing layouts,
 please see the [Podium documentation].
