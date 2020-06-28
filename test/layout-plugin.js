@@ -40,14 +40,14 @@ class Server {
                     const url = `http://${address.address}:${address.port}`;
                     resolve(url);
                 })
-                .catch(error => {
+                .catch((error) => {
                     reject(error);
                 });
         });
     }
 
     close() {
-        return new Promise(resolve => {
+        return new Promise((resolve) => {
             this.app.close(() => {
                 resolve();
             });
@@ -59,7 +59,7 @@ class Server {
  * Constructor
  */
 
-tap.test('fastify name - should be podium-layout', t => {
+tap.test('fastify name - should be podium-layout', (t) => {
     const functionName = 'podium-layout';
 
     t.is(FastifyLayout[Symbol.for('plugin-meta')].name, functionName);
@@ -73,7 +73,7 @@ tap.test('fastify name - should be podium-layout', t => {
 
 tap.test(
     'request layout pathname - should fetch content from podlet and return content wrapped in a document template',
-    async t => {
+    async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
@@ -91,7 +91,7 @@ tap.test(
 
 tap.test(
     'request layout pathname - podlet is dead - should return fallback wrapped in a document template',
-    async t => {
+    async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
@@ -114,7 +114,7 @@ tap.test(
 
 tap.test(
     'GET to "proxy" url - should proxy the request to the Podlets target endpoint',
-    async t => {
+    async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
@@ -143,7 +143,7 @@ tap.test(
 
 tap.test(
     'POST to "proxy" url - should proxy the request to the Podlets target endpoint',
-    async t => {
+    async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
@@ -176,7 +176,7 @@ tap.test(
 
 tap.test(
     'PUT to "proxy" url - should proxy the request to the Podlets target endpoint',
-    async t => {
+    async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
