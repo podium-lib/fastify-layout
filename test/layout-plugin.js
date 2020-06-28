@@ -5,7 +5,7 @@ const fastify = require('fastify');
 const Layout = require('@podium/layout');
 const tap = require('tap');
 
-const FastifyLayout = require('../');
+const FastifyLayout = require('..');
 
 class Server {
     constructor(options = {}, podletAddr) {
