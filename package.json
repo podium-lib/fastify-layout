@@ -34,7 +34,7 @@
   },
   "author": "Trygve Lie",
   "dependencies": {
-    "@podium/utils": "4.4.0",
+    "@podium/utils": "4.4.1",
     "fastify-plugin": "^2.0.0"
   },
   "devDependencies": {
