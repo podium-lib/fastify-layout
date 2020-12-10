@@ -17,9 +17,7 @@ class Server {
             ...options,
         });
 
-        layout.view((incoming, fragment) => {
-            return `## ${fragment} ##`;
-        });
+        layout.view((incoming, fragment) => `## ${fragment} ##`);
 
         const podlet = layout.client.register(podletAddr.options);
 
