@@ -1,3 +1,10 @@
+## [2.2.5](https://github.com/podium-lib/fastify-layout/compare/v2.2.4...v2.2.5) (2020-12-11)
+
+
+### Bug Fixes
+
+* Move Podium processing to a preHandler hook ([7451b25](https://github.com/podium-lib/fastify-layout/commit/7451b2541d522a3e93ac44d68ec45f6159b8fd1a))
+
 ## [2.2.4](https://github.com/podium-lib/fastify-layout/compare/v2.2.3...v2.2.4) (2020-10-29)
 
 
