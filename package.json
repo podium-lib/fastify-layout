@@ -1,6 +1,6 @@
 {
   "name": "@podium/fastify-layout",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Fastify plugin for Podium Layout.",
   "main": "lib/layout-plugin.js",
   "license": "MIT",
