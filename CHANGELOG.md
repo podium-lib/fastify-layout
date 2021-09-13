@@ -1,3 +1,10 @@
+## [2.2.29](https://github.com/podium-lib/fastify-layout/compare/v2.2.28...v2.2.29) (2021-09-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @podium/utils to v4.4.26 ([82f0a47](https://github.com/podium-lib/fastify-layout/commit/82f0a47d5417d257281316f2b03842a06b514fd4))
+
 ## [2.2.28](https://github.com/podium-lib/fastify-layout/compare/v2.2.27...v2.2.28) (2021-08-14)
 
 
