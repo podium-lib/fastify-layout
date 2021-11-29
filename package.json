@@ -41,11 +41,11 @@
     "@podium/layout": "4.6.24",
     "@podium/test-utils": "2.2.0",
     "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/commit-analyzer": "9.0.1",
+    "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",
     "@semantic-release/npm": "8.0.3",
-    "@semantic-release/release-notes-generator": "10.0.2",
+    "@semantic-release/release-notes-generator": "10.0.3",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "8.3.0",
@@ -54,7 +54,7 @@
     "fastify": "3.14.1",
     "fastify-formbody": "5.0.0",
     "prettier": "2.2.1",
-    "semantic-release": "18.0.0",
+    "semantic-release": "18.0.1",
     "tap": "14.11.0"
   }
 }
