@@ -8,7 +8,7 @@ const tap = require('tap');
 const FastifyLayout = require('..');
 
 class Server {
-    constructor(options = {}, podletAddr) {
+    constructor(podletAddr, options = {}) {
         this.app = fastify();
 
         const layout = new Layout({
@@ -60,8 +60,8 @@ class Server {
 tap.test('fastify name - should be podium-layout', (t) => {
     const functionName = 'podium-layout';
 
-    t.is(FastifyLayout[Symbol.for('plugin-meta')].name, functionName);
-    t.is(FastifyLayout[Symbol.for('fastify.display-name')], functionName);
+    t.equal(FastifyLayout[Symbol.for('plugin-meta')].name, functionName);
+    t.equal(FastifyLayout[Symbol.for('fastify.display-name')], functionName);
     t.end();
 });
 
@@ -75,7 +75,7 @@ tap.test(
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
-        const layout = new Server({}, service);
+        const layout = new Server(service);
         const address = await layout.listen();
 
         const result = await request({ address, pathname: '/' });
@@ -93,7 +93,7 @@ tap.test(
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
-        const layout = new Server({}, service);
+        const layout = new Server(service);
         const address = await layout.listen();
 
         // Make sure layout has manifest
@@ -116,7 +116,7 @@ tap.test(
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
-        const layout = new Server({}, service);
+        const layout = new Server(service);
         const address = await layout.listen();
 
         // Make sure layout has manifest so proxy endpoints are mounted
@@ -145,7 +145,7 @@ tap.test(
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
-        const layout = new Server({}, service);
+        const layout = new Server(service);
         const address = await layout.listen();
 
         // Make sure layout has manifest so proxy endpoints are mounted
@@ -178,7 +178,7 @@ tap.test(
         const podlet = new PodletServer();
         const service = await podlet.listen();
 
-        const layout = new Server({}, service);
+        const layout = new Server(service);
         const address = await layout.listen();
 
         // Make sure layout has manifest so proxy endpoints are mounted
