@@ -1,3 +1,10 @@
+## [2.2.39](https://github.com/podium-lib/fastify-layout/compare/v2.2.38...v2.2.39) (2022-02-21)
+
+
+### Bug Fixes
+
+* use additional args when rendering via podiumSend ([69c8be6](https://github.com/podium-lib/fastify-layout/commit/69c8be6e01e5e3fdc838dd74e3754e698bda90f7))
+
 ## [2.2.38](https://github.com/podium-lib/fastify-layout/compare/v2.2.37...v2.2.38) (2022-02-08)
 
 
