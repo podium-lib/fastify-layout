@@ -1,3 +1,15 @@
+# [3.0.0-next.1](https://github.com/podium-lib/fastify-layout/compare/v2.2.40...v3.0.0-next.1) (2022-05-11)
+
+
+### chore
+
+* Test on Node.js 16 and 18 only ([d5a7ba9](https://github.com/podium-lib/fastify-layout/commit/d5a7ba93d9a51e4e0cbfc3c851a54f7c84004fd2))
+
+
+### BREAKING CHANGES
+
+* Test on Node.js 16 and 18 only.
+
 ## [2.2.40](https://github.com/podium-lib/fastify-layout/compare/v2.2.39...v2.2.40) (2022-03-28)
 
 
