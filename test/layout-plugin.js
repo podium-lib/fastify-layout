@@ -1,11 +1,8 @@
-'use strict';
-
-const { PodletServer, request } = require('@podium/test-utils');
-const fastify = require('fastify');
-const Layout = require('@podium/layout');
-const tap = require('tap');
-
-const FastifyLayout = require('..');
+import { PodletServer, request } from '@podium/test-utils';
+import fastify from 'fastify';
+import Layout from '@podium/layout';
+import tap from 'tap';
+import FastifyLayout from '../lib/layout-plugin.js';
 
 class Server {
     constructor(podletAddr, options = {}) {
