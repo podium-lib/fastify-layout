@@ -1,3 +1,15 @@
+# [3.0.0-next.2](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.1...v3.0.0-next.2) (2022-05-19)
+
+
+### Features
+
+* Convert to ESM. ([7f78857](https://github.com/podium-lib/fastify-layout/commit/7f78857e359700a050abe9048c5092864b1e3cfd))
+
+
+### BREAKING CHANGES
+
+* Module is ESM only.
+
 # [3.0.0-next.1](https://github.com/podium-lib/fastify-layout/compare/v2.2.40...v3.0.0-next.1) (2022-05-11)
 
 
