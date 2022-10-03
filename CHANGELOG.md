@@ -1,3 +1,10 @@
+# [3.0.0-next.3](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.2...v3.0.0-next.3) (2022-10-03)
+
+
+### Features
+
+* Support Fastify 4 and Podium 5 ([0897496](https://github.com/podium-lib/fastify-layout/commit/08974967288b82537bb3378724264c34b630380b))
+
 # [3.0.0-next.2](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.1...v3.0.0-next.2) (2022-05-19)
 
 
