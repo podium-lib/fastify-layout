@@ -32,7 +32,7 @@ class Server {
     listen() {
         return new Promise((resolve, reject) => {
             this.app
-                .listen(0)
+                .listen({ port: 0, host: '127.0.0.1' })
                 .then(() => {
                     const address = this.app.server.address();
                     const url = `http://${address.address}:${address.port}`;
