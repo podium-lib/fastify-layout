@@ -15,10 +15,6 @@ please see the [Podium documentation].
 $ npm install @podium/fastify-layout
 ```
 
-## Requirements
-
-This module require Fastify v2.0.0 or newer.
-
 ## Simple usage
 
 Build a simple layout server including a single podlet:
