@@ -1,3 +1,10 @@
+## [2.2.44](https://github.com/podium-lib/fastify-layout/compare/v2.2.43...v2.2.44) (2023-10-12)
+
+
+### Bug Fixes
+
+* bumping version to get version range removal into a version ([#231](https://github.com/podium-lib/fastify-layout/issues/231)) ([9c909f9](https://github.com/podium-lib/fastify-layout/commit/9c909f9e220a3b62fcfcb1f3e9ed1909451da37f))
+
 ## [2.2.43](https://github.com/podium-lib/fastify-layout/compare/v2.2.42...v2.2.43) (2023-02-01)
 
 
