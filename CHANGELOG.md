@@ -1,3 +1,11 @@
+## [2.2.48](https://github.com/podium-lib/fastify-layout/compare/v2.2.47...v2.2.48) (2023-11-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fastify-plugin to v4 ([e5f1ed5](https://github.com/podium-lib/fastify-layout/commit/e5f1ed5944dc2473681d41cabc0a9a53a4b6e50f))
+* use LTS aliases to not chase node version anymore ([e0387ff](https://github.com/podium-lib/fastify-layout/commit/e0387ff187de8b6142e13c0bc00a289416ce14bb))
+
 ## [2.2.47](https://github.com/podium-lib/fastify-layout/compare/v2.2.46...v2.2.47) (2023-11-20)
 
 
