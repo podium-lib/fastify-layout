@@ -1,3 +1,18 @@
+# [3.0.0-next.4](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.3...v3.0.0-next.4) (2023-11-27)
+
+
+### Bug Fixes
+
+* bumping version to get version range removal into a version ([#231](https://github.com/podium-lib/fastify-layout/issues/231)) ([9c909f9](https://github.com/podium-lib/fastify-layout/commit/9c909f9e220a3b62fcfcb1f3e9ed1909451da37f))
+* **deps:** update dependency @podium/utils to v4.4.37 ([3e91676](https://github.com/podium-lib/fastify-layout/commit/3e91676bf0a21fd966c91448f96e8c50e7ef15bc))
+* **deps:** update dependency @podium/utils to v4.4.38 ([96c1279](https://github.com/podium-lib/fastify-layout/commit/96c1279811b53df0bb97ebdfb1d1c1e16e1cc8bd))
+* **deps:** update dependency @podium/utils to v4.4.39 ([792f015](https://github.com/podium-lib/fastify-layout/commit/792f015948f4bb193d0c4a1bc6c2fbb644a2aedf))
+* **deps:** update dependency @podium/utils to v4.4.40 ([603fbe9](https://github.com/podium-lib/fastify-layout/commit/603fbe95ce139bd66120adc59f316331f64130ba))
+* **deps:** update dependency @podium/utils to v4.4.41 ([1cc35fd](https://github.com/podium-lib/fastify-layout/commit/1cc35fdfd4e2b1be76300680b5be282e4982f727))
+* **deps:** update dependency @podium/utils to v4.5.1 ([62fb59e](https://github.com/podium-lib/fastify-layout/commit/62fb59efc24e2a5f622b0769aec3583ba4c77926))
+* **deps:** update dependency fastify-plugin to v4 ([e5f1ed5](https://github.com/podium-lib/fastify-layout/commit/e5f1ed5944dc2473681d41cabc0a9a53a4b6e50f))
+* use LTS aliases to not chase node version anymore ([e0387ff](https://github.com/podium-lib/fastify-layout/commit/e0387ff187de8b6142e13c0bc00a289416ce14bb))
+
 ## [2.2.48](https://github.com/podium-lib/fastify-layout/compare/v2.2.47...v2.2.48) (2023-11-27)
 
 
@@ -54,6 +69,37 @@
 ### Bug Fixes
 
 * **deps:** update dependency @podium/utils to v4.4.37 ([3e91676](https://github.com/podium-lib/fastify-layout/commit/3e91676bf0a21fd966c91448f96e8c50e7ef15bc))
+
+# [3.0.0-next.3](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.2...v3.0.0-next.3) (2022-10-03)
+
+
+### Features
+
+* Support Fastify 4 and Podium 5 ([0897496](https://github.com/podium-lib/fastify-layout/commit/08974967288b82537bb3378724264c34b630380b))
+
+# [3.0.0-next.2](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.1...v3.0.0-next.2) (2022-05-19)
+
+
+### Features
+
+* Convert to ESM. ([7f78857](https://github.com/podium-lib/fastify-layout/commit/7f78857e359700a050abe9048c5092864b1e3cfd))
+
+
+### BREAKING CHANGES
+
+* Module is ESM only.
+
+# [3.0.0-next.1](https://github.com/podium-lib/fastify-layout/compare/v2.2.40...v3.0.0-next.1) (2022-05-11)
+
+
+### chore
+
+* Test on Node.js 16 and 18 only ([d5a7ba9](https://github.com/podium-lib/fastify-layout/commit/d5a7ba93d9a51e4e0cbfc3c851a54f7c84004fd2))
+
+
+### BREAKING CHANGES
+
+* Test on Node.js 16 and 18 only.
 
 ## [2.2.40](https://github.com/podium-lib/fastify-layout/compare/v2.2.39...v2.2.40) (2022-03-28)
 
