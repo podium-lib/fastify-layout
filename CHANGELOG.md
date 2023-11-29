@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/podium-lib/fastify-layout/compare/v2.2.48...v3.0.0) (2023-11-29)
+
+
+### chore
+
+* Test on Node.js 16 and 18 only ([d5a7ba9](https://github.com/podium-lib/fastify-layout/commit/d5a7ba93d9a51e4e0cbfc3c851a54f7c84004fd2))
+
+
+### Features
+
+* Convert to ESM. ([7f78857](https://github.com/podium-lib/fastify-layout/commit/7f78857e359700a050abe9048c5092864b1e3cfd))
+* Support Fastify 4 and Podium 5 ([0897496](https://github.com/podium-lib/fastify-layout/commit/08974967288b82537bb3378724264c34b630380b))
+
+
+### BREAKING CHANGES
+
+* Module is ESM only.
+* Test on Node.js 16 and 18 only.
+
 # [3.0.0-next.4](https://github.com/podium-lib/fastify-layout/compare/v3.0.0-next.3...v3.0.0-next.4) (2023-11-27)
 
 
