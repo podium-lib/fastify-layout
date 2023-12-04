@@ -20,9 +20,9 @@ $ npm install @podium/fastify-layout
 Build a simple layout server including a single podlet:
 
 ```js
-const FastifyLayout = require('@podium/fastify-layout');
-const Layout = require('@podium/layout');
-const fastify = require('fastify');
+import FastifyLayout from '@podium/fastify-layout';
+import Layout from '@podium/layout';
+import fastify from 'fastify';
 
 const app = fastify({ logger: true });
 
