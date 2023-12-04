@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/podium-lib/fastify-layout/compare/v3.0.0...v3.0.1) (2023-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fastify-plugin to v4.5.1 ([3071e8a](https://github.com/podium-lib/fastify-layout/commit/3071e8af616ab78582c57a31f8dad5c08f8355b7))
+
 # [3.0.0](https://github.com/podium-lib/fastify-layout/compare/v2.2.48...v3.0.0) (2023-11-29)
 
 
