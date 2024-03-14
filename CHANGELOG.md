@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/podium-lib/fastify-layout/compare/v3.0.1...v3.0.2) (2024-03-14)
+
+
+### Bug Fixes
+
+* avoid destructively setting reply.app.podium ([1984899](https://github.com/podium-lib/fastify-layout/commit/19848993a44af78739d1f81a5f951defc690cd1a))
+
 ## [3.0.1](https://github.com/podium-lib/fastify-layout/compare/v3.0.0...v3.0.1) (2023-12-04)
 
 
