@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/podium-lib/fastify-layout/compare/v3.0.4...v3.0.5) (2024-06-03)
+
+
+### Bug Fixes
+
+* run podium processes earlier in Fastify lifecycle ([6e9c7a7](https://github.com/podium-lib/fastify-layout/commit/6e9c7a798d55ce96bbdd70036bbc258f98ce8a0c))
+
 ## [3.0.4](https://github.com/podium-lib/fastify-layout/compare/v3.0.3...v3.0.4) (2024-05-15)
 
 
