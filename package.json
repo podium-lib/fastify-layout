@@ -39,7 +39,7 @@
     "fastify-plugin": "4.5.1"
   },
   "devDependencies": {
-    "@podium/layout": "5.0.3",
+    "@podium/layout": "5.1.14",
     "@podium/test-utils": "2.5.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
