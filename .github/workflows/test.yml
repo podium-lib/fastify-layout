@@ -1,32 +1,36 @@
 name: Run Lint and Tests
 
-on: push
+on:
+    pull_request:
+        branches:
+            - main
+            - alpha
+            - beta
+            - next
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-        node-version: [lts/-2, lts/-1, lts/*]
+        node-version: [lts/-1, lts/*]
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: npm install
-        run: |
-          npm install
-        env:
-          CI: true
+        run: npm install
+
       - name: npm lint
-        run: |
-          npm run lint
-        env:
-          CI: true
+        run: npm run lint
+
+      - name: npm types
+        run: npm run types
+
       - name: npm test
-        run: |
-          npm test
-        env:
-          CI: true
+        run: npm test
