@@ -1,3 +1,4 @@
+/// <reference path="../types/layout-plugin.d.ts" />
 import { PodletServer, request } from '@podium/test-utils';
 import fastify from 'fastify';
 import Layout from '@podium/layout';
@@ -31,7 +32,7 @@ class Server {
             this.app
                 .listen({port: 0, host: '127.0.0.1'})
                 .then(() => {
-                    const address = this.app.server.address();
+                    const address = /** @type {import('net').AddressInfo} */ (this.app.server.address());
                     const url = `http://${address.address}:${address.port}`;
                     resolve(url);
                 })
@@ -42,11 +43,11 @@ class Server {
     }
 
     close() {
-        return new Promise((resolve) => {
+        return /** @type {Promise<void>} */(new Promise((resolve) => {
             this.app.close(() => {
                 resolve();
             });
-        });
+        }));
     }
 }
 
