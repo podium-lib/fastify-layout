@@ -1,59 +1,63 @@
 {
-  "name": "@podium/fastify-layout",
-  "version": "3.0.5",
-  "type": "module",
-  "description": "Fastify plugin for Podium Layout.",
-  "main": "lib/layout-plugin.js",
-  "license": "MIT",
-  "keywords": [
-    "micro services",
-    "micro frontend",
-    "components",
-    "podium",
-    "fastify"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:podium-lib/fastify-layout.git"
-  },
-  "bugs": {
-    "url": "https://github.com/podium-lib/issues"
-  },
-  "homepage": "https://podium-lib.io/",
-  "files": [
-    "package.json",
-    "CHANGELOG.md",
-    "README.md",
-    "LICENSE",
-    "lib"
-  ],
-  "scripts": {
-    "test": "tap --disable-coverage --allow-empty-coverage",
-    "test:coverage": "tap",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "author": "Trygve Lie",
-  "dependencies": {
-    "@podium/utils": "5.0.7",
-    "fastify-plugin": "4.5.1"
-  },
-  "devDependencies": {
-    "@podium/layout": "5.0.3",
-    "@podium/test-utils": "2.5.2",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "fastify-formbody": "5.3.0",
-    "@babel/eslint-parser": "7.24.6",
-    "eslint": "8.57.0",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-prettier": "5.1.3",
-    "fastify": "4.27.0",
-    "@fastify/formbody": "7.4.0",
-    "prettier": "3.2.5",
-    "semantic-release": "22.0.12",
-    "tap": "18.7.2"
-  }
+    "name": "@podium/fastify-layout",
+    "version": "3.0.5",
+    "type": "module",
+    "description": "Fastify plugin for Podium Layout.",
+    "main": "lib/layout-plugin.js",
+    "types": "types/layout-plugin.d.ts",
+    "license": "MIT",
+    "keywords": [
+        "micro services",
+        "micro frontend",
+        "components",
+        "podium",
+        "fastify"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:podium-lib/fastify-layout.git"
+    },
+    "bugs": {
+        "url": "https://github.com/podium-lib/issues"
+    },
+    "homepage": "https://podium-lib.io/",
+    "files": [
+        "package.json",
+        "CHANGELOG.md",
+        "README.md",
+        "LICENSE",
+        "lib",
+        "types"
+    ],
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "tap tests/*.js --disable-coverage --allow-empty-coverage && tsc --project tsconfig.test.json",
+        "test:coverage": "tap",
+        "types": "tsc --declaration --emitDeclarationOnly  && ./fixup.sh"
+    },
+    "author": "Trygve Lie",
+    "dependencies": {
+        "@podium/utils": "5.0.7",
+        "fastify-plugin": "4.5.1"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "7.24.6",
+        "@fastify/formbody": "7.4.0",
+        "@podium/layout": "5.1.14",
+        "@podium/test-utils": "3.0.2",
+        "@semantic-release/changelog": "6.0.3",
+        "@semantic-release/git": "10.0.1",
+        "eslint": "8.57.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-plugin-import": "2.29.1",
+        "eslint-plugin-prettier": "5.1.3",
+        "fastify": "4.27.0",
+        "fastify-formbody": "5.3.0",
+        "prettier": "3.2.5",
+        "semantic-release": "22.0.12",
+        "tap": "19.0.0",
+        "typescript": "5.5.2"
+    }
 }
