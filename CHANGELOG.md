@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/podium-lib/fastify-layout/compare/v3.0.5...v3.0.6) (2024-06-25)
+
+
+### Bug Fixes
+
+* include type definition ([55d3268](https://github.com/podium-lib/fastify-layout/commit/55d3268a1439e5576c32cbb492c9d857a84cc1cf))
+
 ## [3.0.5](https://github.com/podium-lib/fastify-layout/compare/v3.0.4...v3.0.5) (2024-06-03)
 
 
