@@ -35,4 +35,9 @@ jobs:
         run: npm run types
 
       - name: npm test
+        if: runner.os != 'Windows'
         run: npm test
+
+      - name: npm test
+        if: runner.os == 'Windows'
+        run: npm run test:unit
