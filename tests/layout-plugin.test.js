@@ -30,9 +30,11 @@ class Server {
     listen() {
         return new Promise((resolve, reject) => {
             this.app
-                .listen({port: 0, host: '127.0.0.1'})
+                .listen({ port: 0, host: '127.0.0.1' })
                 .then(() => {
-                    const address = /** @type {import('net').AddressInfo} */ (this.app.server.address());
+                    const address = /** @type {import('net').AddressInfo} */ (
+                        this.app.server.address()
+                    );
                     const url = `http://${address.address}:${address.port}`;
                     resolve(url);
                 })
@@ -43,11 +45,13 @@ class Server {
     }
 
     close() {
-        return /** @type {Promise<void>} */(new Promise((resolve) => {
-            this.app.close(() => {
-                resolve();
-            });
-        }));
+        return /** @type {Promise<void>} */ (
+            new Promise((resolve) => {
+                this.app.close(() => {
+                    resolve();
+                });
+            })
+        );
     }
 }
 
