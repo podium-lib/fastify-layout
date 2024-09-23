@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/podium-lib/fastify-layout/compare/v3.0.9...v3.0.10) (2024-09-23)
+
+
+### Bug Fixes
+
+* process incoming request and params later ([#278](https://github.com/podium-lib/fastify-layout/issues/278)) ([078e872](https://github.com/podium-lib/fastify-layout/commit/078e87236d0bc7fea3b702ac616e5df57d44bb86))
+
 ## [3.0.9](https://github.com/podium-lib/fastify-layout/compare/v3.0.8...v3.0.9) (2024-09-23)
 
 
