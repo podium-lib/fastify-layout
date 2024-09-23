@@ -32,12 +32,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "run-s test:unit test:types",
-    "test:unit": "tap --disable-coverage --allow-empty-coverage",
-    "test:types": "tsc --project tsconfig.test.json",
+    "test": "tap --disable-coverage --allow-empty-coverage",
     "test:coverage": "tap",
     "types": "run-s types:tsc types:fixup",
-    "types:tsc": "tsc --declaration --emitDeclarationOnly",
+    "types:tsc": "tsc",
     "types:fixup": "node ./fixup.js"
   },
   "author": "Trygve Lie",
@@ -48,7 +46,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.24.7",
     "@fastify/formbody": "7.4.0",
-    "@podium/layout": "5.1.14",
+    "@podium/layout": "5.2.7",
     "@podium/test-utils": "3.0.6",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
@@ -61,7 +59,7 @@
     "npm-run-all2": "5.0.2",
     "prettier": "3.3.2",
     "semantic-release": "22.0.12",
-    "tap": "19.2.5",
+    "tap": "21.0.1",
     "typescript": "5.5.4"
   }
 }

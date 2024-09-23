@@ -1,4 +1,3 @@
-/// <reference path="../types/layout-plugin.d.ts" />
 import { PodletServer, request } from '@podium/test-utils';
 import fastify from 'fastify';
 import Layout from '@podium/layout';
