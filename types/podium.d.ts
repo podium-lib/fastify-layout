@@ -1,7 +1,28 @@
+import { HttpIncoming } from '@podium/utils';
+
 declare module 'fastify' {
     interface PodiumParams {}
 
+    interface PodiumHttpIncomingParameters {
+        [key: string]: unknown;
+    }
+
+    // @podium/layout declares what's on the context. We use the same interface names here to inherit them.
+
+    interface PodiumHttpIncomingContext {
+        [key: string]: unknown;
+    }
+
+    interface PodiumHttpIncomingViewParameters {
+        [key: string]: unknown;
+    }
+
     interface PodiumLocals {
+        podium: HttpIncoming<
+            PodiumHttpIncomingParameters,
+            PodiumHttpIncomingContext,
+            PodiumHttpIncomingViewParameters
+        >;
         params: PodiumParams;
     }
 
