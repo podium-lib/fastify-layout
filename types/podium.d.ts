@@ -33,10 +33,9 @@ declare module 'fastify' {
          *
          * @param markup The HTML contents of the document
          * @param args Parameters sent to the template function
-         * @returns {void} Sends the FastifyReply
          *
          * @see https://podium-lib.io/docs/api/layout#respodiumsendfragment
          */
-        podiumSend: (markup: unknown, ...args: unknown[]) => void;
+        podiumSend(markup: unknown, ...args: unknown[]): FastifyReply;
     }
 }
