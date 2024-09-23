@@ -1,3 +1,10 @@
+## [3.0.7](https://github.com/podium-lib/fastify-layout/compare/v3.0.6...v3.0.7) (2024-09-23)
+
+
+### Bug Fixes
+
+* types for context ([#276](https://github.com/podium-lib/fastify-layout/issues/276)) ([5846f73](https://github.com/podium-lib/fastify-layout/commit/5846f73dccb0b1ac9beb1d6e875b3b1f23e0aabe))
+
 ## [3.0.6](https://github.com/podium-lib/fastify-layout/compare/v3.0.5...v3.0.6) (2024-06-25)
 
 
