@@ -37,7 +37,8 @@
     "test:types": "tsc --project tsconfig.test.json",
     "test:coverage": "tap",
     "types": "run-s types:tsc types:fixup",
-    "types:tsc": "tsc --declaration --emitDeclarationOnly",
+    "types:tsc": "tsc",
+    "types:test": "tsc --project tsconfig.test.json",
     "types:fixup": "node ./fixup.js"
   },
   "author": "Trygve Lie",

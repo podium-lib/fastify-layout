@@ -7,8 +7,8 @@
     "checkJs": true,
     "allowJs": true,
     "moduleResolution": "nodenext",
+    "noEmit": true,
     "declaration": true,
-    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "types"
   },

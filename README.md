@@ -12,7 +12,7 @@ please see the [Podium documentation].
 ## Installation
 
 ```bash
-$ npm install @podium/fastify-layout
+npm install @podium/fastify-layout
 ```
 
 ## Simple usage
@@ -30,12 +30,11 @@ const layout = new Layout({
     pathname: '/',
     logger: console,
     name: 'layout',
-
 });
 
 const podlet = layout.client.register({
     name: 'myPodlet',
-    uri: 'http://localhost:7100/manifest.json'
+    uri: 'http://localhost:7100/manifest.json',
 });
 
 app.register(FastifyLayout, layout);
@@ -44,17 +43,18 @@ app.get(layout.pathname(), async (request, reply) => {
     const incoming = reply.app.podium;
     const result = await podlet.fetch(incoming);
     reply.podiumSend(result.content);
+    await reply;
 });
 
 const start = async () => {
     try {
-        await app.listen(7000);
+        await app.listen({ port: 7000 });
         app.log.info(`server listening on ${app.server.address().port}`);
     } catch (err) {
         app.log.error(err);
         process.exit(1);
     }
-}
+};
 start();
 ```
 
