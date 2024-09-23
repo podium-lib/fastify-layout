@@ -1,3 +1,10 @@
+## [3.0.8](https://github.com/podium-lib/fastify-layout/compare/v3.0.7...v3.0.8) (2024-09-23)
+
+
+### Bug Fixes
+
+* return the FastifyReply so async works as expected ([#277](https://github.com/podium-lib/fastify-layout/issues/277)) ([2d919ab](https://github.com/podium-lib/fastify-layout/commit/2d919ab0b31190b78a4d96ad906eb89a28ff1f73))
+
 ## [3.0.7](https://github.com/podium-lib/fastify-layout/compare/v3.0.6...v3.0.7) (2024-09-23)
 
 
