@@ -42,8 +42,7 @@ app.register(FastifyLayout, layout);
 app.get(layout.pathname(), async (request, reply) => {
     const incoming = reply.app.podium;
     const result = await podlet.fetch(incoming);
-    reply.podiumSend(result.content);
-    await reply;
+    return reply.podiumSend(result.content);
 });
 
 const start = async () => {

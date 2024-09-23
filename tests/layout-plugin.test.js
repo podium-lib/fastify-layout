@@ -22,7 +22,7 @@ class Server {
 
         this.app.get(layout.pathname(), async (req, reply) => {
             const result = await podlet.fetch(reply.app.podium);
-            reply.podiumSend(result);
+            return reply.podiumSend(result);
         });
     }
 
