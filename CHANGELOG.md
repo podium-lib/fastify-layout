@@ -1,3 +1,10 @@
+## [3.0.11](https://github.com/podium-lib/fastify-layout/compare/v3.0.10...v3.0.11) (2024-09-25)
+
+
+### Bug Fixes
+
+* include the protocol when creating HttpIncoming ([#279](https://github.com/podium-lib/fastify-layout/issues/279)) ([efee917](https://github.com/podium-lib/fastify-layout/commit/efee917c009a2fdf3fee6ad921796214e944077b))
+
 ## [3.0.10](https://github.com/podium-lib/fastify-layout/compare/v3.0.9...v3.0.10) (2024-09-23)
 
 
