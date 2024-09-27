@@ -21,7 +21,9 @@ class Server {
         this.app.register(FastifyLayout, layout);
 
         this.app.get(layout.pathname(), async (req, reply) => {
+            // @ts-ignore
             const result = await podlet.fetch(reply.app.podium);
+            // @ts-ignore
             return reply.podiumSend(result);
         });
     }
