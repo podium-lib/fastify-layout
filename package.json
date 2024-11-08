@@ -41,19 +41,18 @@
   },
   "author": "Trygve Lie",
   "dependencies": {
-    "@podium/utils": "5.3.1",
-    "fastify-plugin": "4.5.1"
+    "@podium/utils": "5.3.2",
+    "fastify-plugin": "5.0.1"
   },
   "devDependencies": {
-    "@fastify/formbody": "7.4.0",
+    "@fastify/formbody": "8.0.1",
     "@podium/eslint-config": "1.0.2",
     "@podium/layout": "5.2.7",
     "@podium/semantic-release-config": "2.0.0",
     "@podium/test-utils": "3.0.11",
     "@podium/typescript-config": "1.0.0",
     "eslint": "9.13.0",
-    "fastify": "4.28.1",
-    "fastify-formbody": "5.3.0",
+    "fastify": "5.1.0",
     "npm-run-all2": "6.2.6",
     "prettier": "3.3.3",
     "semantic-release": "24.1.2",
