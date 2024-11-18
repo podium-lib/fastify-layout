@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/podium-lib/fastify-layout/compare/v4.0.0...v4.0.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @podium/utils to v5.4.0 ([#289](https://github.com/podium-lib/fastify-layout/issues/289)) ([abf4d07](https://github.com/podium-lib/fastify-layout/commit/abf4d074502e6eabe92aa8dfc0488a43fff36ef4))
+
 # [4.0.0](https://github.com/podium-lib/fastify-layout/compare/v3.0.11...v4.0.0) (2024-11-08)
 
 
