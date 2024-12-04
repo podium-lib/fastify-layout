@@ -2,7 +2,6 @@
 
 Fastify plugin for @podium/layout.
 
-[![Dependencies](https://img.shields.io/david/podium-lib/fastify-layout.svg)](https://david-dm.org/podium-lib/fastify-layout)
 [![GitHub Actions status](https://github.com/podium-lib/fastify-layout/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/podium-lib/fastify-layout/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
 
 Module for building [@podium/layout] servers with [fastify]. For writing layouts,
