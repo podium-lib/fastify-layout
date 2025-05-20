@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/podium-lib/fastify-layout/compare/v4.0.1...v4.0.2) (2025-05-20)
+
+
+### Bug Fixes
+
+* handle JSON bodies for proxied POST, PUT, DELETE APIs ([#310](https://github.com/podium-lib/fastify-layout/issues/310)) ([e7f5dec](https://github.com/podium-lib/fastify-layout/commit/e7f5decf70e559cc30fdba8f82309b6d925c36f9))
+
 ## [4.0.1](https://github.com/podium-lib/fastify-layout/compare/v4.0.0...v4.0.1) (2024-11-18)
 
 
