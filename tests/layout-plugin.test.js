@@ -143,7 +143,43 @@ tap.test(
 );
 
 tap.test(
-    'POST to "proxy" url - should proxy the request to the Podlets target endpoint',
+    'POST to "proxy" url - should proxy the request to the Podlets target endpoint for application/json',
+    async (t) => {
+        const podlet = new PodletServer();
+        const service = await podlet.listen();
+
+        const layout = new Server(service);
+        const address = await layout.listen();
+
+        // Make sure layout has manifest so proxy endpoints are mounted
+        await request({ address, pathname: '/' });
+
+        // Request proxy endpoint
+        const result = await fetch(
+            new URL('/podium-resource/component/localApi', address),
+            {
+                body: JSON.stringify({
+                    message: 'Message for proxied localApi',
+                }),
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+            },
+        );
+
+        const body = await result.json();
+        t.equal(body.payload, '{"message":"Message for proxied localApi"}');
+        t.equal(body.body, 'POST proxy target');
+
+        await layout.close();
+        await podlet.close();
+        t.end();
+    },
+);
+
+tap.test(
+    'POST to "proxy" url - should proxy the request to the Podlets target endpoint for application/x-www-form-urlencoded',
     async (t) => {
         const podlet = new PodletServer();
         const service = await podlet.listen();
