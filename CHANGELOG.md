@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/podium-lib/fastify-layout/compare/v4.0.4...v4.0.5) (2026-04-07)
+
+
+### Bug Fixes
+
+* update podium dependencies ([15df6c6](https://github.com/podium-lib/fastify-layout/commit/15df6c6986cf75258644cd1d06a3aaefd349f61c))
+
 ## [4.0.4](https://github.com/podium-lib/fastify-layout/compare/v4.0.3...v4.0.4) (2025-12-12)
 
 
