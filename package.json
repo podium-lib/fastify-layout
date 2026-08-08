@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:podium-lib/fastify-layout.git"
+    "url": "git+https://github.com/podium-lib/fastify-layout.git"
   },
   "bugs": {
     "url": "https://github.com/podium-lib/issues"
